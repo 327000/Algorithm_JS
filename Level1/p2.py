@@ -1,3 +1,4 @@
+# LEVEL_1 : 신고 결과 받기
 def solution(id_list, report, k):
     answer = []
     report_1 = list(set(report))
@@ -18,13 +19,6 @@ def solution(id_list, report, k):
                 mailed[a] = 1
             else:
                 mailed[a] += 1
-    #
-    # for i in range(0, len(id_list)):
-    #     if mailed.get(id_list[i]) != None:
-    #         answer.append(mailed.get(id_list[i]))
-    #     else:
-    #         answer.append(0)
-
     for _ in mailed:
         if mailed[_] > 0:
             answer.append(mailed[_])
