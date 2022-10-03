@@ -1,3 +1,4 @@
+#k진수에서 소수 개수 구하기
 import math
 def solution(n, k):
     answer = 0
